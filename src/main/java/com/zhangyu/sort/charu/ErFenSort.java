@@ -1,5 +1,7 @@
 package com.zhangyu.sort.charu;
 
+import com.zhangyu.sort.SortBase;
+
 /*
  * @author : Lordling_Zhang
  * @description : 插入排序-二分法排序
@@ -10,7 +12,7 @@ package com.zhangyu.sort.charu;
  *       最后被比较对象直接插入left+1这个位置
  * @date : 2018/7/19
  */
-public class ErFenSort extends SortBase{
+public class ErFenSort extends SortBase {
 
     public static void main(String[] args){
         int[] originArry = {12, 24,452,1,334,2,8,3,253,32};

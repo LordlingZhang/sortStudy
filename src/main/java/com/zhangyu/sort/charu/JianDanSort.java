@@ -1,5 +1,7 @@
 package com.zhangyu.sort.charu;
 
+import com.zhangyu.sort.SortBase;
+
 /*
  * @author : Lordling_Zhang
  * @description : 简单排序
@@ -8,16 +10,12 @@ package com.zhangyu.sort.charu;
  *       比较的数字继续往前比较，直到不小于前一位数字，此轮排序结束，开始下一轮。
  * @date : 2018/7/19
  */
-public class JianDanSort {
+public class JianDanSort extends SortBase {
 
     public static void main(String[] args){
 
         int[] originArry = {12, 24,452,1,334,2,8,3,253,32};
-        System.out.print("before sort :");
-        for (int origin : originArry){
-            System.out.print(origin + " ");
-        }
-        System.out.println();
+        beforeSort(originArry);
 
         for (int i = 1 ; i < originArry.length; i ++){
             // 记录下一个带插入字段位置   只需从第二个开始
@@ -36,10 +34,7 @@ public class JianDanSort {
 
         }
 
-        System.out.print("after sort :");
-        for (int origin : originArry){
-            System.out.print(origin + " ");
-        }
+        afterSort(originArry);
 
     }
 }
